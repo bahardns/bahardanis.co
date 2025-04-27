@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Bahar Danis Frontend Gelistirici" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Java , HTML ,CSS" />
+    <meta name="author" content="Bahar" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bahar's Website</title>
+  </head>
+  <body>
+    <!-- Navigasyon -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+          <li><a href="#">İletişim</a></li>
+          <li><a href="#">Portfolyo</a></li>
+          <li><a href="#">Yazılım</a></li>
+          <li><a href="#">Dil</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- İlk açılış-->
+    <div class="page-container">
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Web Siteme Hoşgeldiniz!</h1>
+          <p>Yaratıcı projeler ve tasarımları keşfet</p>
+        </div>
+      </section>
+      <!-- İkili kartlar -->
+      <section class="content-section">
+        <div class="left-content">
+          <h2>İlk Başlık</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolore totam quibusdam quidem. Maxime delectus error aperiam accusamus aut quas voluptates labore eius, voluptate animi ab sint tempore, neque sapiente.
+          Expedita earum reiciendis veniam voluptatum ex esse reprehenderit nam, saepe veritatis, itaque pariatur. Quod veniam, molestias ad amet nemo iusto fuga. Optio esse eveniet voluptates animi placeat minima rem eligendi!</p>
+        </div>
+        <div class="right-content">
+          <h2>İkinci Başlık</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a eum porro sapiente, mollitia earum blanditiis. Aliquid nostrum optio magnam? Laborum tempora quaerat, alias numquam natus corrupti velit recusandae quo?</p>
+        </div>
+      </section>
+      <!-- Parallax Efekti -->
+      <section class="parallax">
+        <h2>Parallax Efekti Alanı</h2>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <!-- Sosyal Medya İkonları -->
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+
+        <!-- İletişim Bilgileri -->
+        <div class="contact-info">
+          <p><strong>İletişim:</strong></p>
+          <p>Email: <a href="mailto:bahar@example.com">bahar@example.com</a></p>
+          <p>Telefon: <a href="tel:+123456789">+123 456 789</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Script Codes-->
+    <script>
+      window.addEventListener("scroll", function () {
+        const footer = document.querySelector("footer");
+        const parallaxHeight = document.querySelector(".parallax").offsetHeight;
+
+        if (window.scrollY > parallaxHeight) {
+          footer.style.opacity = "1"; // Görünür hale gelsin
+          footer.style.backgroundColor = "#ecf0f1"; // Açık renge geçiş
+        } else {
+          footer.style.opacity = "0"; // Başlangıçta görünmesin
+          footer.style.backgroundColor = "#2c3e50"; // Koyu renk
+        }
+      });
+    </script>
+  </body>
+</html>
