@@ -32,11 +32,12 @@ nav ul {
 }
 
 nav ul li {
+  font-family: "Playfair", serif;
   margin-left: 30px;
 }
 
 nav ul li a {
-  color: #eeeeee;
+  color: #F5F7F8;
   text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.3s, transform 0.3s;
@@ -45,8 +46,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffe3e3;
-  transform: scale(1.1);
+  color: #A9A9A9;
+  /*transform: scale(1.1);*/
 }
 
 /* Hero Section */
